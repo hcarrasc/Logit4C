@@ -26,4 +26,6 @@ Tue Feb 02 13:31:55 2016  | main - Hello World :)
 Tue Feb 02 13:31:55 2016  | main - Is an amazing day to coding :D
 ```
 
-Adding a timestamp and function name where was called logit function.
+Adding a timestamp and function name where was called logit function. 
+
+__Feel free to give pull request and improve this project.__
