@@ -13,7 +13,10 @@ And call to logit function:
 ```
 char* data;
 data = "Hello World :)";
-logit(data, __FUNCTION__); 
+logit(data, _F_); 
+
+data = "Is an amazing day to coding :D";
+logit(data, _F_); 
 ```
 
 It create a log file and print inner as follow:
