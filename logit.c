@@ -8,7 +8,7 @@
 
 void logit(char* text, char* function) {
     
-    FILE *log = fopen("testFD_C.log","a+");
+    FILE *log = fopen("application_name.log","a+");
     if (log==NULL) {
         fclose (log);
     }
