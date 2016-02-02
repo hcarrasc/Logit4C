@@ -6,7 +6,6 @@
   Description: Log what you need. Import this file in your souce code.
 */
 
-#include <time.h>
 #import "logit.c"
 
-void logit(char* text);
+void logit(char* text, char* function);

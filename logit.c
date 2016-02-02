@@ -4,21 +4,20 @@
   Date: 02-02-16 12:14
   Description: Log what you need.
 */
+#include <time.h>
 
-
-void logit(char* text) {
+void logit(char* text, char* function) {
     
-    FILE *log = fopen("the_system_name.log","a+");
+    FILE *log = fopen("testFD_C.log","a+");
     if (log==NULL) {
         fclose (log);
     }
     
-    time_t ltime; /* calendar time */
+    time_t ltime;       /* calendar time */
     ltime = time(NULL); /* get current cal time */
     char* timeAux = asctime(localtime(&ltime));
     timeAux[24] = ' ';
     
-    fprintf(log,"\n%s - %s",timeAux, text);
+    fprintf(log,"\n%s | %s - %s",timeAux, function, text);
     fclose(log);
-    
 }
