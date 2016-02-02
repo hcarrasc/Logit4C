@@ -7,5 +7,6 @@
 */
 
 #import "logit.c"
+#define _F_ __FUNCTION__
 
 void logit(char* text, char* function);
