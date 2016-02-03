@@ -13,19 +13,20 @@ And call to logit function:
 ```
 char* data;
 data = "Hello World :)";
-logit(data, _F_); 
+logit(data, _F_, _L_); 
 
 data = "Is an amazing day to coding :D";
-logit(data, _F_); 
+logit(data, _F_, _L_); 
 ```
 
 It create a log file and print inner as follow:
 
 ```
-Tue Feb 02 13:31:55 2016  | main - Hello World :)
-Tue Feb 02 13:31:55 2016  | main - Is an amazing day to coding :D
+Wed Feb 03 16:49:52 2016  | main | 9 - Hello World :)
+Wed Feb 03 16:49:52 2016  | main | 12 - Is an amazing day to coding :D
+Wed Feb 03 16:49:52 2016  | main | 15 - And add a few new features :D
 ```
 
-Adding a timestamp and function name where was called logit function. 
+Adding a timestamp, function name and code line where logit() function was called. 
 
 __Feel free to give pull request and improve this project.__

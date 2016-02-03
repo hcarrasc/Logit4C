@@ -8,5 +8,6 @@
 
 #import "logit.c"
 #define _F_ __FUNCTION__
+#define _L_ __LINE__
 
-void logit(char* text, char* function);
+void logit(char* text, char* function, int line);

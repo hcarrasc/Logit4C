@@ -1,12 +1,15 @@
 /*
   Name: Logit4C.c
   Author: Héctor Carrasco
-  Date: 02-02-16 12:14
+  Date: 02-02-2016 12:14
   Description: Log what you need.
 */
+
 #include <time.h>
 
-void logit(char* text, char* function) {
+int firstRun = 0;
+
+void logit(char* text, char* function, int line) {
     
     FILE *log = fopen("application_name.log","a+");
     if (log==NULL) {
@@ -18,6 +21,12 @@ void logit(char* text, char* function) {
     char* timeAux = asctime(localtime(&ltime));
     timeAux[24] = ' ';
     
-    fprintf(log,"\n%s | %s - %s",timeAux, function, text);
+    if (firstRun == 0){
+        firstRun = 1;
+        fprintf(log,"\n\n\n%s ---------- STARTING NEW INSTANCE OF PROGRAM ----------\n", timeAux);
+    } 
+    
+    fprintf(log,"\n%s | %s | %d - %s",timeAux, function, line, text);
     fclose(log);
+    
 }
