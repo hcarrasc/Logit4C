@@ -6,6 +6,7 @@
 */
 
 #include <time.h>
+#include <stdio.h>
 
 int firstRun = 0;
 
@@ -23,7 +24,7 @@ void logit(char* text, char* function, int line) {
     
     if (firstRun == 0){
         firstRun = 1;
-        fprintf(log,"\n\n\n%s ---------- STARTING NEW INSTANCE OF PROGRAM ----------\n", timeAux);
+        fprintf(log,"\n\n\n%s ---------- STARTING NEW APPLICATION INSTANCE ----------\n", timeAux);
     } 
     
     fprintf(log,"\n%s | %s | %d - %s",timeAux, function, line, text);
