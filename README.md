@@ -30,3 +30,5 @@ Wed Feb 03 16:49:52 2016  | main | 15 - And add a few new features :D
 Adding a timestamp, function name and code line where logit() function was called. 
 
 __Feel free to give pull request and improve this project.__
+
+**NOTE:**  `__LINE__` and `__FUNCTION__` directives doesnt works in Mac OSX El Capitan.
